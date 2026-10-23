@@ -1,0 +1,35 @@
+{
+  "seed": 2026,
+  "total": 720,
+  "by_family": {
+    "topology": 120,
+    "subnet": 120,
+    "tcp_seq": 120,
+    "cwnd": 120,
+    "ipv4_header": 120,
+    "capture": 120
+  },
+  "by_difficulty": {
+    "easy": 180,
+    "medium": 180,
+    "hard": 180,
+    "expert": 180
+  },
+  "by_subtype": {
+    "topology/path_cost": 60,
+    "topology/next_hop": 60,
+    "subnet/misconfigured": 60,
+    "subnet/broadcast": 60,
+    "tcp_seq/cum_ack": 60,
+    "tcp_seq/dup_count": 60,
+    "cwnd/loss_type": 40,
+    "cwnd/ssthresh": 40,
+    "cwnd/n_losses": 40,
+    "ipv4_header/payload_len": 40,
+    "ipv4_header/frag_offset": 40,
+    "ipv4_header/more_frags": 40,
+    "capture/n_conns": 40,
+    "capture/retrans": 40,
+    "capture/refused": 40
+  }
+}

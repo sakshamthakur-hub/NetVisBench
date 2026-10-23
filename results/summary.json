@@ -1,0 +1,466 @@
+{
+  "n_items": 720,
+  "models": {
+    "gemini:gemma-4-26b-a4b-it": {
+      "blind": {
+        "acc": 15.1,
+        "n": 720,
+        "ci": [
+          12.7,
+          17.9
+        ],
+        "by_family": {
+          "topology": 16.7,
+          "subnet": 8.3,
+          "tcp_seq": 5.0,
+          "cwnd": 28.3,
+          "ipv4_header": 16.7,
+          "capture": 15.8
+        },
+        "by_difficulty": {
+          "easy": 16.1,
+          "medium": 19.4,
+          "hard": 15.6,
+          "expert": 9.4
+        },
+        "answer_tag_rate": 99.2,
+        "no_answer_rate": 0.8
+      },
+      "sgd": {
+        "acc": 94.0,
+        "n": 720,
+        "ci": [
+          92.1,
+          95.5
+        ],
+        "by_family": {
+          "topology": 93.3,
+          "subnet": 100.0,
+          "tcp_seq": 76.7,
+          "cwnd": 96.7,
+          "ipv4_header": 100.0,
+          "capture": 97.5
+        },
+        "by_difficulty": {
+          "easy": 98.9,
+          "medium": 97.2,
+          "hard": 91.7,
+          "expert": 88.3
+        },
+        "answer_tag_rate": 96.2,
+        "no_answer_rate": 3.5
+      },
+      "text": {
+        "acc": 99.0,
+        "n": 720,
+        "ci": [
+          98.0,
+          99.5
+        ],
+        "by_family": {
+          "topology": 100.0,
+          "subnet": 100.0,
+          "tcp_seq": 99.2,
+          "cwnd": 95.8,
+          "ipv4_header": 100.0,
+          "capture": 99.2
+        },
+        "by_difficulty": {
+          "easy": 99.4,
+          "medium": 99.4,
+          "hard": 98.9,
+          "expert": 98.3
+        },
+        "answer_tag_rate": 99.6,
+        "no_answer_rate": 0.3
+      },
+      "vision": {
+        "acc": 96.1,
+        "n": 720,
+        "ci": [
+          94.4,
+          97.3
+        ],
+        "by_family": {
+          "topology": 96.7,
+          "subnet": 100.0,
+          "tcp_seq": 88.3,
+          "cwnd": 98.3,
+          "ipv4_header": 100.0,
+          "capture": 93.3
+        },
+        "by_difficulty": {
+          "easy": 100.0,
+          "medium": 96.7,
+          "hard": 94.4,
+          "expert": 93.3
+        },
+        "answer_tag_rate": 99.7,
+        "no_answer_rate": 0.0
+      },
+      "p_vision_vs_sgd": 0.06744461190078899,
+      "sgd_wins": 22,
+      "sgd_losses": 37,
+      "vision_errors": 28,
+      "perception_errors": 27,
+      "reasoning_errors": 1,
+      "perception_share": 96.4,
+      "p_vision_vs_text": 0.0003240634687244892,
+      "vision_tokens_per_item": 967,
+      "vision_latency_s": 23.64,
+      "sgd_tokens_per_item": 5256,
+      "sgd_latency_s": 114.2,
+      "dup_bias": {
+        "errors": 11,
+        "said_three": 7,
+        "tcp_errors": 14
+      },
+      "budget": {
+        "vision": {
+          "512": 50.0,
+          "1024": 78.8,
+          "2048": 90.6,
+          "4096": 93.1,
+          "8192": 94.9,
+          "16384": 96.1
+        },
+        "text": {
+          "512": 3.1,
+          "1024": 7.5,
+          "2048": 27.6,
+          "4096": 63.3,
+          "8192": 87.8,
+          "16384": 99.0
+        },
+        "sgd": {
+          "512": 3.2,
+          "1024": 11.2,
+          "2048": 37.6,
+          "4096": 66.5,
+          "8192": 82.6,
+          "16384": 94.0
+        }
+      },
+      "gen_mean_vision": 967,
+      "gen_mean_text": 4219,
+      "gen_mean_sgd": 5256,
+      "gen_mean_blind": 3724,
+      "gen_tokens": {
+        "vision": {
+          "easy": 447,
+          "medium": 925,
+          "hard": 832,
+          "expert": 1664
+        },
+        "text": {
+          "easy": 2469,
+          "medium": 3587,
+          "hard": 4583,
+          "expert": 6236
+        },
+        "sgd": {
+          "easy": 2796,
+          "medium": 4369,
+          "hard": 5566,
+          "expert": 8290
+        },
+        "blind": {
+          "easy": 3361,
+          "medium": 3886,
+          "hard": 3919,
+          "expert": 3732
+        }
+      },
+      "no_answer": {
+        "blind": 6,
+        "sgd": 25,
+        "text": 2,
+        "vision": 0
+      },
+      "sgd_errors": {
+        "total": 43,
+        "cut": 27,
+        "cut_tcp": 20,
+        "wrong_answers": 16
+      }
+    },
+    "gemini:gemma-4-31b-it": {
+      "blind": {
+        "acc": 14.0,
+        "n": 720,
+        "ci": [
+          11.7,
+          16.8
+        ],
+        "by_family": {
+          "topology": 14.2,
+          "subnet": 5.0,
+          "tcp_seq": 5.0,
+          "cwnd": 26.7,
+          "ipv4_header": 19.2,
+          "capture": 14.2
+        },
+        "by_difficulty": {
+          "easy": 16.7,
+          "medium": 16.1,
+          "hard": 15.6,
+          "expert": 7.8
+        },
+        "answer_tag_rate": 100.0,
+        "no_answer_rate": 0.0
+      },
+      "sgd": {
+        "acc": 98.2,
+        "n": 720,
+        "ci": [
+          96.9,
+          98.9
+        ],
+        "by_family": {
+          "topology": 96.7,
+          "subnet": 100.0,
+          "tcp_seq": 92.5,
+          "cwnd": 100.0,
+          "ipv4_header": 100.0,
+          "capture": 100.0
+        },
+        "by_difficulty": {
+          "easy": 100.0,
+          "medium": 99.4,
+          "hard": 96.7,
+          "expert": 96.7
+        },
+        "answer_tag_rate": 100.0,
+        "no_answer_rate": 0.0
+      },
+      "text": {
+        "acc": 99.9,
+        "n": 720,
+        "ci": [
+          99.2,
+          100.0
+        ],
+        "by_family": {
+          "topology": 100.0,
+          "subnet": 100.0,
+          "tcp_seq": 99.2,
+          "cwnd": 100.0,
+          "ipv4_header": 100.0,
+          "capture": 100.0
+        },
+        "by_difficulty": {
+          "easy": 100.0,
+          "medium": 100.0,
+          "hard": 99.4,
+          "expert": 100.0
+        },
+        "answer_tag_rate": 100.0,
+        "no_answer_rate": 0.0
+      },
+      "vision": {
+        "acc": 98.8,
+        "n": 720,
+        "ci": [
+          97.6,
+          99.3
+        ],
+        "by_family": {
+          "topology": 98.3,
+          "subnet": 100.0,
+          "tcp_seq": 94.2,
+          "cwnd": 100.0,
+          "ipv4_header": 100.0,
+          "capture": 100.0
+        },
+        "by_difficulty": {
+          "easy": 100.0,
+          "medium": 98.3,
+          "hard": 97.8,
+          "expert": 98.9
+        },
+        "answer_tag_rate": 100.0,
+        "no_answer_rate": 0.0
+      },
+      "p_vision_vs_sgd": 0.480682373046875,
+      "sgd_wins": 7,
+      "sgd_losses": 11,
+      "vision_errors": 9,
+      "perception_errors": 9,
+      "reasoning_errors": 0,
+      "perception_share": 100.0,
+      "p_vision_vs_text": 0.021484375,
+      "vision_tokens_per_item": 1860,
+      "vision_latency_s": 74.21,
+      "sgd_tokens_per_item": 4191,
+      "sgd_latency_s": 168.11,
+      "dup_bias": {
+        "errors": 7,
+        "said_three": 6,
+        "tcp_errors": 7
+      },
+      "budget": {
+        "vision": {
+          "512": 4.3,
+          "1024": 33.9,
+          "2048": 71.9,
+          "4096": 91.0,
+          "8192": 97.9,
+          "16384": 98.8
+        },
+        "text": {
+          "512": 3.6,
+          "1024": 18.6,
+          "2048": 63.2,
+          "4096": 91.1,
+          "8192": 99.2,
+          "16384": 99.9
+        },
+        "sgd": {
+          "512": 0.3,
+          "1024": 21.9,
+          "2048": 50.6,
+          "4096": 78.6,
+          "8192": 92.2,
+          "16384": 98.2
+        }
+      },
+      "gen_mean_vision": 1860,
+      "gen_mean_text": 2059,
+      "gen_mean_sgd": 4191,
+      "gen_mean_blind": 1474,
+      "gen_tokens": {
+        "vision": {
+          "easy": 1037,
+          "medium": 1588,
+          "hard": 1964,
+          "expert": 2851
+        },
+        "text": {
+          "easy": 1301,
+          "medium": 1777,
+          "hard": 2081,
+          "expert": 3075
+        },
+        "sgd": {
+          "easy": 2317,
+          "medium": 3103,
+          "hard": 4725,
+          "expert": 6620
+        },
+        "blind": {
+          "easy": 1403,
+          "medium": 1469,
+          "hard": 1563,
+          "expert": 1462
+        }
+      },
+      "no_answer": {
+        "blind": 0,
+        "sgd": 0,
+        "text": 0,
+        "vision": 0
+      },
+      "sgd_errors": {
+        "total": 13,
+        "cut": 0,
+        "cut_tcp": 0,
+        "wrong_answers": 13
+      }
+    }
+  },
+  "full_models": [
+    "gemini:gemma-4-26b-a4b-it",
+    "gemini:gemma-4-31b-it"
+  ],
+  "chance_overall": 7.9,
+  "greedy_ablation": {
+    "gemini:gemma-4-26b-a4b-it|vision": {
+      "n": 720,
+      "acc_greedy": 92.4,
+      "acc_default": 96.1,
+      "cut_greedy": 4.3,
+      "cut_default": 0.3,
+      "tok_greedy": 1352,
+      "tok_default": 967
+    },
+    "gemini:gemma-4-26b-a4b-it|text": {
+      "n": 261,
+      "acc_greedy": 50.2,
+      "acc_default": 100.0,
+      "cut_greedy": 49.8,
+      "cut_default": 0.0,
+      "tok_greedy": 10263,
+      "tok_default": 4773
+    },
+    "gemini:gemma-4-31b-it|vision": {
+      "n": 719,
+      "acc_greedy": 95.3,
+      "acc_default": 98.7,
+      "cut_greedy": 2.5,
+      "cut_default": 0.0,
+      "tok_greedy": 2328,
+      "tok_default": 1857
+    },
+    "gemini:gemma-4-31b-it|text": {
+      "n": 378,
+      "acc_greedy": 96.3,
+      "acc_default": 100.0,
+      "cut_greedy": 3.7,
+      "cut_default": 0.0,
+      "tok_greedy": 2712,
+      "tok_default": 2129
+    }
+  },
+  "expert": {
+    "gemini:gemma-4-26b-a4b-it": {
+      "n": 180,
+      "vision": 93.3,
+      "text": 98.3,
+      "gap": 5.0,
+      "p": 0.0224609375,
+      "vision_only": 2,
+      "text_only": 11,
+      "by_family_vision": {
+        "topology": 100.0,
+        "subnet": 100.0,
+        "tcp_seq": 86.7,
+        "cwnd": 96.7,
+        "ipv4_header": 100.0,
+        "capture": 76.7
+      },
+      "by_family_text": {
+        "topology": 100.0,
+        "subnet": 100.0,
+        "tcp_seq": 96.7,
+        "cwnd": 96.7,
+        "ipv4_header": 100.0,
+        "capture": 96.7
+      }
+    },
+    "gemini:gemma-4-31b-it": {
+      "n": 180,
+      "vision": 98.9,
+      "text": 100.0,
+      "gap": 1.1,
+      "p": 0.5,
+      "vision_only": 0,
+      "text_only": 2,
+      "by_family_vision": {
+        "topology": 100.0,
+        "subnet": 100.0,
+        "tcp_seq": 93.3,
+        "cwnd": 100.0,
+        "ipv4_header": 100.0,
+        "capture": 100.0
+      },
+      "by_family_text": {
+        "topology": 100.0,
+        "subnet": 100.0,
+        "tcp_seq": 100.0,
+        "cwnd": 100.0,
+        "ipv4_header": 100.0,
+        "capture": 100.0
+      }
+    }
+  }
+}
